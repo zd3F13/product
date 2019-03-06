@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import "bootstrap";
+
+/* 基本設定 ここから↓ */
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 87.5%;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  &:hover {
+  text-decoration: none;
+  }
+}
+table {
+  border-collapse: collapse;
+}
+/* 基本設定 ここまで↑ */
+
+/* 基本レイアウト ここから↓ */
+.global-header, .global-nav, .local-contents, .global-footer {
+  width: 960px;
+  margin: 0 auto;
+}
+/* 基本レイアウト ここまで↑ */
+
+/* Home ここから↓ */
+/* Home ここまで↑ */
+
+/* About ここから↓ */
+/* About ここまで↑ */
+
+/* Experience ここから↓ */
+/* Experience ここまで↑ */
+
+/* Rates ここから↓ */
+/* Rates ここまで↑ */
+
+/* Contact ここから↓ */
+/* Contact ここまで↑ */

@@ -3,24 +3,48 @@
 @import "bootstrap";
 
 /* 基本設定 ここから↓ */
+body {
+  letter-spacing: .1em;
+}
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 /* 基本設定 ここまで↑ */
 
 /* 基本レイアウト ここから↓ */
-.global-header, .global-nav, .local-contents, .global-footer {
-  width: 960px;
-  margin: 0 auto;
+.global-header {
+  height: 224px;
+  background-color: ghostwhite;
+  h1 {
+    height: 140px;
+    padding-top: 84px;
+    text-align: center;
+  }
+  .nav-link {
+    &::after {
+      display: block;
+      content: "";
+      border-bottom: 1px solid #fff;
+      position: relative;
+      bottom: 0;
+      margin: 0 auto;
+      width: 0;
+      transition: width 300ms ease-in-out;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
-.hero {
+/* .hero {
   width: 1280px;
   margin: 0 auto;
-}
+} */
 /* トップページ ここまで↑ */
 
 /* このサイトについて ここから↓ */

@@ -18,23 +18,29 @@
 </head>
 
 <body id="index">
-  <header class="global-header mb-5">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-0">
-      <div class="container">
+  <header class="global-header mb-md-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">トップページ</li>
-            <li class="nav-item"><a class="nav-link p-0" href="about.html">このサイトについて</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="article.html">記事一覧</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="contact.html">お問い合わせ</a></li>
+            <li class="nav-item py-2 pr-md-4">トップページ</li>
+            <li class="nav-item py-2 pr-md-4"><a class="nav-link p-0" href="about.html">このサイトについて</a></li>
+            <li class="nav-item py-2 pr-md-4"><a class="nav-link p-0" href="article.html">記事一覧</a></li>
+            <li class="nav-item py-2"><a class="nav-link p-0" href="contact.html">お問い合わせ</a></li>
           </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link p-0" href="">サイト内検索</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="">サイトマップ</a></li>
-          </ul>
+          <form class="form-inline">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="ブログ内を検索">
+              <span class="input-group-append"><button class="btn btn-default" type="submit"><i class="fa fa-search fa-lg"></i></button></span>
+            </div>
+          </form>
+          <!-- <ul class="navbar-nav">
+            <li class="nav-item py-2 pl-md-4"><a class="nav-link p-0" href="">サイト内検索</a></li>
+            <li class="nav-item py-2 pl-md-4"><a class="nav-link p-0" href="">サイトマップ</a></li>
+          </ul> -->
         </div><!-- .collapse -->
       </div><!-- .container -->
     </nav>
@@ -45,11 +51,11 @@
   <!-- <div class="hero">
     <p><a href="index.html"><img src="images/hero.jpg" alt="Hero"></a></p>
   </div> -->
-  <main class="local-contents container">
+  <main class="local-contents container-fluid rounded pb-md-4 pl-md-4 mb-md-5">
     <div class="row">
-      <section class="local-contents__post col-md-10 pr-md-5 mb-5">
+      <section class="local-contents__post pt-4 col-md-9 mb-5 mb-md-0">
         <h2 class="mb-4">新着記事</h2>
-        <div class="card-deck mb-4">
+        <div class="card-deck mb-md-4">
           <article class="local-contents__post__item1 card shadow-sm">
             <p><a href=""><img src="images/LoremImage1.png" alt="image1" class="card-img-top w-100"></a></p>
             <div class="card-body">
@@ -57,10 +63,10 @@
               <h3 class="card-title"><a href="">Lorem Title</a></h3>
               <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem a consequatur ut, aut fugiat ipsum sed! Fuga vel, iusto quod facere nulla voluptas eaque, temporibus similique ad excepturi unde ullam corrupti officiis rem, porro tenetur doloribus tempora officia consequuntur tempore laborum rerum distinctio! Recusandae porro, aliquam minima sit excepturi.</p>
               <p class="card-text mb-3"><a href="" class="btn btn-outline-dark">つづきを読む</a></p>
-              <ul class="mb-2">
-                <li class="pull-left">#タグ1</li>
-                <li class="pull-left">#タグ2</li>
-                <li>#タグ3</li>
+              <ul class="mb-2 clearfix">
+                <li class="pr-2 pull-left">#タグ1</li>
+                <li class="pr-2 pull-left">#タグ2</li>
+                <li class="pr-2 pull-left">#タグ3</li>
               </ul>
               <table class="table mb-0">
                 <tr>
@@ -78,10 +84,10 @@
               <h3 class="card-title"><a href="">Lorem Title</a></h3>
               <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem a consequatur ut, aut fugiat ipsum sed! Fuga vel, iusto quod facere nulla voluptas eaque, temporibus similique ad excepturi unde ullam corrupti officiis rem, porro tenetur doloribus tempora officia consequuntur tempore laborum rerum distinctio! Recusandae porro, aliquam minima sit excepturi.</p>
               <p class="card-text mb-3"><a href="" class="btn btn-outline-dark">つづきを読む</a></p>
-              <ul class="mb-2">
-                <li class="pull-left">#タグ4</li>
-                <li class="pull-left">#タグ5</li>
-                <li>#タグ6</li>
+              <ul class="mb-2 clearfix">
+                <li class="pr-2 pull-left">#タグ4</li>
+                <li class="pr-2 pull-left">#タグ5</li>
+                <li class="pr-2 pull-left">#タグ6</li>
               </ul>
               <table class="table mb-0">
                 <tr>
@@ -93,7 +99,7 @@
             </div>
           </article>
         </div>
-        <div class="card-deck mb-4">
+        <div class="card-deck mb-md-4">
           <article class="local-contents__post__item3 card shadow-sm">
             <p><a href=""><img src="images/LoremImage3.png" alt="image3" class="card-img-top w-100"></a></p>
             <div class="card-body">
@@ -101,10 +107,10 @@
               <h3 class="card-title"><a href="">Lorem Title</a></h3>
               <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem a consequatur ut, aut fugiat ipsum sed! Fuga vel, iusto quod facere nulla voluptas eaque, temporibus similique ad excepturi unde ullam corrupti officiis rem, porro tenetur doloribus tempora officia consequuntur tempore laborum rerum distinctio! Recusandae porro, aliquam minima sit excepturi.</p>
               <p class="card-text mb-3"><a href="" class="btn btn-outline-dark">つづきを読む</a></p>
-              <ul class="mb-2">
-                <li class="pull-left">#タグ1</li>
-                <li class="pull-left">#タグ2</li>
-                <li>#タグ3</li>
+              <ul class="mb-2 clearfix">
+                <li class="pr-2 pull-left">#タグ1</li>
+                <li class="pr-2 pull-left">#タグ2</li>
+                <li class="pr-2 pull-left">#タグ3</li>
               </ul>
               <table class="table mb-0">
                 <tr>
@@ -122,10 +128,10 @@
               <h3 class="card-title"><a href="">Lorem Title</a></h3>
               <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem a consequatur ut, aut fugiat ipsum sed! Fuga vel, iusto quod facere nulla voluptas eaque, temporibus similique ad excepturi unde ullam corrupti officiis rem, porro tenetur doloribus tempora officia consequuntur tempore laborum rerum distinctio! Recusandae porro, aliquam minima sit excepturi.</p>
               <p class="card-text mb-3"><a href="" class="btn btn-outline-dark">つづきを読む</a></p>
-              <ul class="mb-2">
-                <li class="pull-left">#タグ4</li>
-                <li class="pull-left">#タグ5</li>
-                <li>#タグ6</li>
+              <ul class="mb-2 clearfix">
+                <li class="pr-2 pull-left">#タグ4</li>
+                <li class="pr-2 pull-left">#タグ5</li>
+                <li class="pr-2 pull-left">#タグ6</li>
               </ul>
               <table class="table mb-0">
                 <tr>
@@ -139,25 +145,25 @@
         </div>
         <p><a href="article.html" class="btn btn-lg btn-block btn-outline-dark">もっと見る</a></p>
       </section>
-      <aside class="local-contents__side col-md-2 mb-5">
+      <aside class="local-contents__side pr-md-0 col-md-3 mb-5 mb-md-0">
             <div class="mb-5">
-              <h2 class="mb-4">最近の投稿</h2>
+              <h2 class="p-3 border-bottom">最近の投稿</h2>
               <ul>
-                <li><a href="">投稿1</a></li>
-                <li><a href="">投稿2</a></li>
+                <li class="p-3 border-bottom"><a href="">投稿1</a></li>
+                <li class="p-3 border-bottom"><a href="">投稿2</a></li>
               </ul>
             </div>
             <div class="mb-5">
-              <h2 class="mb-4">カテゴリー</h2>
+              <h2 class="p-3 border-bottom">カテゴリー</h2>
               <ul>
-                <li>カテゴリー1</li>
-                <li>カテゴリー2</li>
+                <li class="p-3 border-bottom">カテゴリー1</li>
+                <li class="p-3 border-bottom">カテゴリー2</li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-4">アーカイブ</h2>
+              <h2 class="p-3 border-bottom">アーカイブ</h2>
               <ul>
-                <li>2019年3月</li>
+                <li class="p-3 border-bottom">2019年3月</li>
               </ul>
             </div>
       </aside>
@@ -166,21 +172,15 @@
 <!-- main ここまで↑ -->
 
   <footer class="global-footer mt-auto">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
-      <div class="container">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link p-0" href="index.html">トップページ</a></li>
-          <li class="nav-item"><a class="nav-link p-0" href="about.html">このサイトについて</a></li>
-          <li class="nav-item"><a class="nav-link p-0" href="article.html">記事一覧</a></li>
-          <li class="nav-item"><a class="nav-link p-0" href="contact.html">お問い合わせ</a></li>
-        </ul>
-        <p><small>Copyright &copy; 2019 fictitious name rights reserved.</small></p>
-      </div><!-- .container -->
-    </nav>
+    <div class="container-fluid">
+      <p class="py-3"><small>Copyright &copy; 2019 fictitious name rights reserved.</small></p>
+    </div><!-- .container -->
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/holder.min.js"></script>
+  <script src="js/original.js"></script>
+  <button type="button" class="btn btn-dark rounded-circle p-0 text-center" id="backbtn"><i class="fa fa-chevron-up fa-2x align-text-bottom"></i></button>
 </body>
 </html>
 <!-- footer ここまで↑ -->

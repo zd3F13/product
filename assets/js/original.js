@@ -35,6 +35,7 @@ $(function() {
   $("section").find("h2").css({"borderLeftColor": clrBg});
   $("aside").find("h2").css({"backgroundColor": clrBg});
   $("aside").find("h2").css({"color": clr});
+  $("article").find("img").css({"backgroundColor": clrBg});
 });
 
 // ページの先頭へ戻るボタンを追加
@@ -54,4 +55,31 @@ $(function() {
     }, 380);
     return false;
   });
+});
+
+$(function(){
+    var windowWidth = $(window).width();
+    if (windowWidth < 768) {
+      $("article:nth-of-type(2)").removeClass("fade");
+      $("article:nth-of-type(2)").addClass("fadein");
+    }
+});
+$(function(){
+    $('.fade').each(function(){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+    });
+});
+$(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 250){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
 });

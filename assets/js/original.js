@@ -17,6 +17,7 @@
 //   $("body").attr("class", "bg-clr__01");
 // });
 
+// サイトカラーの切り替え
 $(function() {
   function getClr() {
     var clrArr = ["#cd5c5c", "#8fbc8f", "#4682b4", "#f0e68c"];
@@ -35,7 +36,6 @@ $(function() {
   $("section").find("h2").css({"borderLeftColor": clrBg});
   $("aside").find("h2").css({"backgroundColor": clrBg});
   $("aside").find("h2").css({"color": clr});
-  $("article").find("img").css({"backgroundColor": clrBg});
 });
 
 // ページの先頭へ戻るボタンを追加
@@ -57,6 +57,14 @@ $(function() {
   });
 });
 
+// 記事画像の高さを設定
+$(function(){
+    var width = $(".card-image").width();
+    var height = Math.floor(width / 16 * 9);
+    $(".card-image").css("height", height);
+});
+
+// 記事の表示動作を設定
 $(function(){
     var windowWidth = $(window).width();
     if (windowWidth < 768) {

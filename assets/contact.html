@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>お問い合わせ　|　product</title>
+  <title>お問い合わせ　|　Web & Color</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,59 +16,116 @@
   <!--[if lt IE 8]>
   <![endif]-->
 </head>
+
 <body id="contact">
-  <header class="global-header">
+  <header class="global-header mb-md-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item py-2 pr-md-4"><a class="nav-link p-0" href="index.html">トップページ</a></li>
+            <li class="nav-item py-2 pr-md-4"><a class="nav-link p-0" href="about.html">このサイトについて</a></li>
+            <li class="nav-item py-2">お問い合わせ</li>
+          </ul>
+          <form class="form-inline">
+            <div class="input-group pt-2 pt-md-0">
+              <input class="form-control" type="search" placeholder="ブログ内を検索する">
+              <span class="input-group-append"><button class="btn btn-default" type="submit"><i class="fa fa-search fa-lg"></i></button></span>
+            </div>
+          </form>
+        </div><!-- .collapse -->
+      </div><!-- .container -->
+    </nav>
     <h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
-    <ul>
-      <li><a href="">サイト内検索</a></li>
-      <li><a href="">サイトマップ</a></li>
-    </ul>
   </header>
-  <nav class="global-nav">
-    <ul>
-      <li class="global-nav__top"><a href="index.html">トップページ</a></li>
-      <li class="global-nav__about"><a href="about.html">このサイトについて</a></li>
-      <li class="global-nav__article"><a href="article.html">記事一覧</a></li>
-      <li class="global-nav__contact">お問い合わせ</li>
-    </ul>
-  </nav>
 <!-- header ここまで↑ -->
 
-  <main class="local-contents">
-    <section class="local-contents__contact">
-      <h2>お問い合わせ</h2>
-    </section>
-    <aside>
-      <h2>最近の投稿</h2>
-      <ul>
-        <li><a href="">投稿1</a></li>
-        <li><a href="">投稿2</a></li>
-      </ul>
-      <h2>カテゴリー</h2>
-      <ul>
-        <li>カテゴリー1</li>
-        <li>カテゴリー2</li>
-      </ul>
-      <h2>アーカイブ</h2>
-      <ul>
-        <li>2019年3月</li>
-      </ul>
-    </aside>
+  <!-- <div class="hero">
+    <p><a href="index.html"><img src="images/hero.jpg" alt="Hero"></a></p>
+  </div> -->
+  <main class="local-contents container-fluid rounded pb-md-4 pl-md-4 mb-md-5">
+    <div class="row">
+      <section class="local-contents__fix2 pt-4 col-md-9 mb-5 mb-md-0">
+        <h2 class="mb-4">お問い合わせ</h2>
+        <p>お問い合わせなどございましたら、下記フォームよりお気軽にお寄せください。</p>
+        <p>すべての項目を記入し、「送信する」をクリックしてください。</p>
+        <p>ご記入いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</p>
+        <form action="" method="post" class="pt-5" novalidate>
+          <div class="form-row mb-4">
+            <label class="control-label col-md-4 col-lg-3" for="name">氏名</label>
+            <div class="col-md-6 col-lg-7">
+              <input type="text" class="form-control" placeholder="(例) 山田 太郎" id="name" required>
+              <div class="invalid-feedback">氏名を入力してください。</div>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <label class="control-label col-md-4 col-lg-3" for="kana">フリガナ</label>
+            <div class="col-md-6 col-lg-7">
+              <input type="text" class="form-control" placeholder="(例) ヤマダ タロウ" id="kana" required>
+              <div class="invalid-feedback">フリガナを入力してください。</div>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <label class="control-label col-md-4 col-lg-3" for="mail">メールアドレス</label>
+            <div class="col-md-6 col-lg-7">
+              <input type="email" class="form-control" placeholder="(例) taro-yamada@example.com" id="mail" required>
+              <div class="invalid-feedback">メールアドレスを入力してください。</div>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <label class="control-label col-md-4 col-lg-3" for="comment">お問い合わせ内容</label>
+            <div class="col-md-6 col-lg-7">
+              <textarea rows="5" class="form-control" id="comment"></textarea>
+              <div class="invalid-feedback">お問い合わせ内容を入力してください。</div>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="col-md-4 col-lg-3"></div>
+            <div class="col-md-6 col-lg-7">
+              <button class="btn btn-outline-dark" type="submit">送信する</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <aside class="local-contents__side pr-md-0 col-md-3 mb-5 mb-md-0">
+            <div class="mb-5">
+              <h2 class="p-3 border-bottom">最近の投稿</h2>
+              <ul>
+                <li class="p-3 border-bottom"><a href="">投稿1</a></li>
+                <li class="p-3 border-bottom"><a href="">投稿2</a></li>
+              </ul>
+            </div>
+            <div class="mb-5">
+              <h2 class="p-3 border-bottom">カテゴリー</h2>
+              <ul>
+                <li class="p-3 border-bottom">カテゴリー1</li>
+                <li class="p-3 border-bottom">カテゴリー2</li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="p-3 border-bottom">アーカイブ</h2>
+              <ul>
+                <li class="p-3 border-bottom">2019年3月</li>
+              </ul>
+            </div>
+      </aside>
+    </div><!-- .row -->
   </main>
 <!-- main ここまで↑ -->
 
-  <footer class="global-footer">
-    <ul>
-      <li class="global-nav__top"><a href="index.html">トップページ</li>
-      <li class="global-nav__about"><a href="about.html">このサイトについて</a></li>
-      <li class="global-nav__article"><a href="article.html">記事一覧</a></li>
-      <li class="global-nav__contact"><a href="contact.html">お問い合わせ</a></li>
-    </ul>
-    <p><small>Copyright &copy; 2019 fictitious name rights reserved.</small></p>
+  <footer class="global-footer mt-auto">
+    <div class="container-fluid">
+      <p class="py-2"><small>Copyright &copy; 2019 fictitious name rights reserved.</small></p>
+    </div><!-- .container -->
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/holder.min.js"></script>
+  <script src="js/original.js"></script>
+  <button type="button" class="btn btn-dark rounded-circle p-0 text-center" id="backbtn"><i class="fa fa-chevron-up fa-2x align-text-bottom"></i></button>
 </body>
 </html>
 <!-- footer ここまで↑ -->
